@@ -1,22 +1,31 @@
 <Configuration ID="b31a4b52-0242-49b0-b38f-13659c530d6a">
-  <Add OfficeClientEdition="64" Channel="MonthlyEnterprise">
-    <Product ID="O365ProPlusRetail">
-      <Language ID="fr-fr" />
-      <ExcludeApp ID="Groove" />
-      <ExcludeApp ID="Lync" />
-    </Product>
-     </Add>
-  <Property Name="SharedComputerLicensing" Value="0" />
-  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
-  <Property Name="DeviceBasedLicensing" Value="0" />
-  <Property Name="SCLCacheOverride" Value="0" />
-  <Property Name="TenantId" Value="28a5be2f-3afe-4808-aa5c-1bc847d526be" />
-  <Updates Enabled="TRUE" />
-  <RemoveMSI />
-  <AppSettings>
-    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
-    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
-    <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
-  </AppSettings>
-  <Display Level="Full" AcceptEULA="TRUE" />
+<Info Description="Administration communale de Villars-sur-Glâne"/>
+<Add OfficeClientEdition="64" Channel="MonthlyEnterprise">
+<Product ID="O365ProPlusRetail">
+<Language ID="fr-fr"/>
+<ExcludeApp ID="Groove"/>
+<ExcludeApp ID="Lync"/>
+</Product>
+<Product ID="LanguagePack">
+<Language ID="fr-fr"/>
+</Product>
+<Product ID="ProofingTools">
+<Language ID="fr-fr"/>
+</Product>
+</Add>
+<Property Name="SharedComputerLicensing" Value="0"/>
+<Property Name="FORCEAPPSHUTDOWN" Value="TRUE"/>
+<Property Name="DeviceBasedLicensing" Value="0"/>
+<Property Name="SCLCacheOverride" Value="0"/>
+<Property Name="TenantId" Value="28a5be2f-3afe-4808-aa5c-1bc847d526be"/>
+<Updates Enabled="TRUE"/>
+<RemoveMSI/>
+<AppSettings>
+<Setup Name="Company" Value="Administration communale de Villars-sur-Glane"/>
+<User Key="software\microsoft\office\16.0\common\languageresources\enabledlanguages" Name="fr-ch" Value="3" Type="REG_DWORD" App="office16" Id="L_FrenchSwitzerland"/>
+<User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas"/>
+<User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas"/>
+<User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas"/>
+</AppSettings>
+<Display Level="Full" AcceptEULA="TRUE"/>
 </Configuration>
