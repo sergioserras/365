@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; OneDrive : connexion automatique avec le compte Windows (postes joints Entra ID / hybrides)
+; A appliquer en administrateur (double-clic, GPO ou Intune). Prend effet a la prochaine ouverture de session.
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\OneDrive]
+"SilentAccountConfig"=dword:00000001
