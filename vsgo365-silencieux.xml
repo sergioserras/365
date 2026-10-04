@@ -1,0 +1,41 @@
+<Configuration ID="240e80db-e755-42cc-93d6-80353e13a833">
+<Info Description="Administration communale de Villars-sur-Glâne - installation silencieuse"/>
+<Add OfficeClientEdition="64" Channel="MonthlyEnterprise">
+<Product ID="O365ProPlusRetail">
+<Language ID="fr-fr"/>
+<ExcludeApp ID="Groove"/>
+<ExcludeApp ID="Lync"/>
+</Product>
+<Product ID="LanguagePack">
+<Language ID="fr-fr"/>
+</Product>
+<Product ID="ProofingTools">
+<Language ID="fr-fr"/>
+</Product>
+</Add>
+<Property Name="SharedComputerLicensing" Value="0"/>
+<Property Name="FORCEAPPSHUTDOWN" Value="TRUE"/>
+<Property Name="DeviceBasedLicensing" Value="0"/>
+<Property Name="SCLCacheOverride" Value="0"/>
+<Property Name="TenantId" Value="28a5be2f-3afe-4808-aa5c-1bc847d526be"/>
+<Updates Enabled="TRUE"/>
+<RemoveMSI/>
+<AppSettings>
+<Setup Name="Company" Value="Administration communale de Villars-sur-Glane"/>
+<User Key="software\microsoft\office\16.0\common\languageresources\enabledlanguages" Name="fr-ch" Value="3" Type="REG_DWORD" App="office16" Id="L_FrenchSwitzerland"/>
+<User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas"/>
+<User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas"/>
+<User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas"/>
+<!-- Premier lancement : pas d'assistant d'accueil, pas de vidéo, pas d'écran de démarrage -->
+<User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard"/>
+<User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_BootedRTM"/>
+<User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie"/>
+<!-- Écran "Votre confidentialité est importante" : masqué dès qu'une de ces stratégies est définie (1 = autorisé, comportement par défaut) -->
+<User Key="software\policies\microsoft\office\16.0\common\privacy" Name="usercontentdisabled" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureUserContent"/>
+<User Key="software\policies\microsoft\office\16.0\common\privacy" Name="downloadcontentdisabled" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureDownloadContent"/>
+<User Key="software\policies\microsoft\office\16.0\common\privacy" Name="controllerconnectedservicesenabled" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureOptionalConnectedExperiences"/>
+<User Key="software\policies\microsoft\office\16.0\common\privacy" Name="disconnectedstate" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureConnectedExperiences"/>
+</AppSettings>
+<!-- Aucune fenêtre pendant ni à la fin de l'installation -->
+<Display Level="None" AcceptEULA="TRUE"/>
+</Configuration>
