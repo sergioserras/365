@@ -35,6 +35,8 @@
 <User Key="software\policies\microsoft\office\16.0\common\privacy" Name="downloadcontentdisabled" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureDownloadContent"/>
 <User Key="software\policies\microsoft\office\16.0\common\privacy" Name="controllerconnectedservicesenabled" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureOptionalConnectedExperiences"/>
 <User Key="software\policies\microsoft\office\16.0\common\privacy" Name="disconnectedstate" Value="1" Type="REG_DWORD" App="office16" Id="L_ConfigureConnectedExperiences"/>
+<!-- Connexion : comptes professionnels uniquement, pas de compte Microsoft personnel (2 = ID d'organisation uniquement) -->
+<User Key="software\policies\microsoft\office\16.0\common\signin" Name="signinoptions" Value="2" Type="REG_DWORD" App="office16" Id="L_SignInOptions"/>
 </AppSettings>
 <!-- Aucune fenêtre pendant ni à la fin de l'installation -->
 <Display Level="None" AcceptEULA="TRUE"/>
