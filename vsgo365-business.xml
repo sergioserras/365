@@ -14,11 +14,6 @@
 <Language ID="fr-fr"/>
 </Product>
 </Add>
-<Remove>
-<Product ID="O365ProPlusRetail">
-<Language ID="fr-fr"/>
-</Product>
-</Remove>
 <Property Name="SharedComputerLicensing" Value="0"/>
 <Property Name="FORCEAPPSHUTDOWN" Value="TRUE"/>
 <Property Name="DeviceBasedLicensing" Value="0"/>
